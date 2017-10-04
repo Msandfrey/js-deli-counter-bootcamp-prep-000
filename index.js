@@ -1,8 +1,7 @@
 var katzDeli = []
-var katzDeliLine = []
 function takeANumber(line, name){
-  katzDeliLine.push(name)
-  return line.length
+  line.push(name)
+  return `Welcome, ${name}. You are number ${line.length} in line.`
 }
 function nowServing(line){
   if(line.length === 0) return "There is nobody waiting to be served!"
