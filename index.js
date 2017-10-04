@@ -16,7 +16,7 @@ function currentLine(line){
     for(var i = 0; i < line.length; i++){
       var place = i + 1
       var person = line[i]
-      string += ` ${place}. ${person}`
+      string += ` ${place}. ${person}${place === line.length ? "," : ""}`
     }
   }
   return string
